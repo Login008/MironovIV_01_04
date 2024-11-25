@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BankActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
+        android:layout_gravity="start"
+        android:src="@drawable/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/registr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Регистрация"
+        android:textColor="@color/green"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:background="@color/green"
+        android:layout_marginBottom="41dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите ваш логин и пароль"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="55dp"/>
+
+        <EditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:hint="Логин"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/black"
+            android:layout_marginLeft="56dp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@id/editTextLogin"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:layout_marginLeft="56dp"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="183dp"
+            android:background="@drawable/shape"
+            android:text="Войти"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
